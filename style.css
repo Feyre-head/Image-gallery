@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Mantém a imagem fixa no fundo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Imagem/bg3.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; /* Ajuste a transparência */
+  z-index: -1; /* Mantém a imagem atrás do conteúdo */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  width: 100vw;
+  height: 5rem;
+
+  background-color: #000103;
+  color: white;
+
+  opacity: 0.9;
+}
+
+header button {
+  border-style: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  background-color: white;
+  color: #000103;
+
+  cursor: pointer;
+}
+header button:hover {
+  background-color: #0b3543;
+  color: white;
+}
+
+form {
+  padding: 30px;
+  justify-items: center;
+}
+
+form h2 {
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+input,
+button {
+  padding: 10px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: #010;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0b3543;
+  color: white;
+}
+
+#botao-cancelar {
+  background-color: rgb(68, 7, 19);
+}
+
+#botao-cancelar:hover {
+  background-color: rgb(22, 3, 7);
+}
+
+/* Color Theme Swatches in Hex */
+.baby-blues-1-hex {
+  color: #000103;
+}
+.baby-blues-2-hex {
+  color: #0b3543;
+}
+.baby-blues-3-hex {
+  color: #326d7b;
+}
+.baby-blues-4-hex {
+  color: #4c91a1;
+}
+.baby-blues-5-hex {
+  color: #7ebdc2;
+}
