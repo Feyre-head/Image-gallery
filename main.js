@@ -22,7 +22,7 @@ $(document).ready(function () {
         </li>
       `);
     $("ul").append(novoItem);
-    novoItem.fadeIn(1000);
+    novoItem.fadeIn();
     $("#endereco-imagem-nova").val("");
   });
 });
